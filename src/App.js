@@ -6,7 +6,7 @@ const App = () => (
   <Router>
     <div>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route path={process.env.PUBLIC_URL + '/'} component={Home} />
       </Switch>
     </div>
   </Router>
